@@ -1,0 +1,40 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://www.gmail.com",
+      "name": "Valberto",
+      "birth": 883612800000,
+      "educational_level": "4",
+      "class_type": "presential",
+      "matter": "matematica"
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://uol.com.br",
+      "name": "Rose",
+      "birth": 205718400000,
+      "educational_level": "1",
+      "class_type": "dist_learning",
+      "matter": "português, inglês"
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://globo.com",
+      "name": "Nathany",
+      "birth": -2876256000000,
+      "educational_level": "3",
+      "class_type": "presential",
+      "matter": "Física"
+    },
+    {
+      "id": 4,
+      "avatar_url": "http://uol.com.br",
+      "name": "Reny",
+      "birth": 626486400000,
+      "educational_level": "2",
+      "class_type": "presential",
+      "matter": "Geografia, História"
+    }
+  ]
+}

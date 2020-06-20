@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/home.css">
+        <title>My School</title>
+    </head>
+    <body>
+        <div id="page-teachers">
+            <div class="content">
+                <header>
+                    <nav class="links">
+                        <a href="/teachers" class="active">
+                            Teachers
+                        </a>
+                        <a href="#">
+                            Students
+                        </a>
+                    </nav>
+                </header>
+
+                {% block content %}{% endblock content %}
+
+            </div>
+        </div>
+    </body>
+</html>

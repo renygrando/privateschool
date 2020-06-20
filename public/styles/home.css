@@ -1,0 +1,159 @@
+header {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.links {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.links a {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.links a+a {
+    margin-left: 30px;
+}
+
+.links a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 400ms ease-in-out;
+}
+
+/*===Card dos professores===*/
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 50px auto;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    animation: mycard 400ms ease-in;
+}
+
+.details {
+    padding: 30px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@keyframes mycard {
+    from {
+        opacity: 0;
+        transform: translateY(15px)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*===FORMULARIO DE CADASTRO===*/
+input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 8px;
+}
+
+select {
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFF;
+    width: 100%;
+    margin-top: 8px;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 8px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
