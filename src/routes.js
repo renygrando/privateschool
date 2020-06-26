@@ -9,9 +9,14 @@ routes.get('/', (req, res) => {
 routes.get('/teachers', (req, res) => {
     return res.render('teachers')
 })
+
 routes.get('/teachers/create', (req, res) => {
     return res.render('create')
 })
+
+routes.get('/teachers/:id', teachers.show)
+
+routes.get('/teachers/:id/edit', teachers.edit)
 
 routes.post('/teachers', teachers.post)
 
