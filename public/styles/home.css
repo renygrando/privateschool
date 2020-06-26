@@ -52,6 +52,7 @@ header {
 /*===Card dos professores===*/
 .card {
     background-color: white;
+    border-radius: 30px;
     width: 800px;
     min-height: 400px;
     display: grid;
@@ -60,7 +61,16 @@ header {
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
     animation: mycard 400ms ease-in;
 }
-
+.card .avatar {
+    border-radius: 30px 0 0 30px;
+    box-shadow: 9px 0px 9px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
 .details {
     padding: 30px;
 }
@@ -142,6 +152,7 @@ select {
     margin-top: 8px;
 }
 
+a.button,
 button[type="submit"] {
     font-size: 16px;
     font-weight: bold;
@@ -154,6 +165,12 @@ button[type="submit"] {
     width: 100%;
 }
 
+a.button {
+    display: block;
+    text-align: center;
+}
+
+a.button:hover,
 button:hover {
     background-color: var(--primary-color);
 }
