@@ -10,13 +10,13 @@
       "matter": "matematica"
     },
     {
-      "id": 2,
-      "avatar_url": "http://uol.com.br",
-      "name": "Rose",
+      "id": "2",
+      "avatar_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=709&q=80",
+      "name": "Roseneide Grando",
       "birth": 205718400000,
       "educational_level": "1",
       "class_type": "dist_learning",
-      "matter": "português, inglês"
+      "matter": "Matemática"
     },
     {
       "id": 3,
@@ -46,9 +46,9 @@
       "matter": "Física, Química, Matemática"
     },
     {
-      "id": 6,
+      "id": "6",
       "avatar_url": "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-      "name": "Pantera da Silva",
+      "name": "Pantera da Silva Sauro",
       "birth": 555465600000,
       "educational_level": "2",
       "class_type": "dist_learning",
