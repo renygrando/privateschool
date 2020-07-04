@@ -174,3 +174,11 @@ a.button:hover,
 button:hover {
     background-color: var(--primary-color);
 }
+
+/* BUTTON DELETAR */
+#form-delete button[type="submit"] {
+    background-color: coral;
+}
+#form-delete button[type="submit"]:hover {
+    background-color: rgb(238, 86, 31);
+}
