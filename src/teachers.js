@@ -18,7 +18,7 @@ exports.post = (req, res) => {
     birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length + 1)
-
+    
     data.teachers.push ({
         id,
         avatar_url,
@@ -37,7 +37,7 @@ exports.post = (req, res) => {
 
 exports.show = (req, res) => {
     
-    const { id } = req.body
+    const { id } = req.params
     const foundTeacher = data.teachers.find(function(teacher) {
         return teacher.id == id
     })
