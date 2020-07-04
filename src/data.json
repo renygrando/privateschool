@@ -1,12 +1,24 @@
 {
-  "teachers": {
-    "id": 3,
-    "avatar_url": "https://images.unsplash.com/photo-1585982827892-21021e0415ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    "name": "Joãozinho",
-    "birth": 905212800000,
-    "educational_level": "3",
-    "class_type": "dist_learning",
-    "matter": "Ciências",
-    "created_at": 1593894741118
-  }
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1587564916952-9fbe0047b7cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Roseneide Camargo Schineider Grando",
+      "birth": -93744000000,
+      "educational_level": "2",
+      "class_type": "presential",
+      "matter": "Matemática, Física",
+      "created_at": 1593896868293
+    },
+    {
+      "id": "2",
+      "avatar_url": "https://images.unsplash.com/photo-1586798658502-0dc367cb2776?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Pipoca da Silva Sauro",
+      "birth": 1441670400000,
+      "educational_level": "4",
+      "class_type": "dist_learning",
+      "matter": "Ciências",
+      "created_at": 1593896907802
+    }
+  ]
 }
