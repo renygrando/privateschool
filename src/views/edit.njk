@@ -12,7 +12,11 @@
 
                 {% include "fields.njk"%}
                 <input type="hidden" name="id" value="{{ teacher.id }}">
-                
+                <div class="item">
+                <div>
+                    <button type="submit">Salvar</button>
+                </div>
+</div>
         </form>
         <form id="form-delete" action="/teachers?_method=DELETE" method="POST">
             <input type="hidden" name="id" value="{{ teacher.id }}">
