@@ -37,9 +37,9 @@ exports.post = (req, res) => {
 
 exports.show = (req, res) => {
     
-    const { id } = req.params
-    const foundTeacher = data.teachers.find((instructor) =>{
-        return instructor.id == id
+    const { id } = req.body
+    const foundTeacher = data.teachers.find(function(teacher) {
+        return teacher.id == id
     })
     if (!foundTeacher) return res.send("Esse professor não foi encontrado!")
     
@@ -59,10 +59,10 @@ exports.show = (req, res) => {
 }
 
 exports.edit = (req, res) => {
-    
+
     const { id } = req.params
-    const foundTeacher = data.teachers.find((instructor) =>{
-        return instructor.id == id
+    const foundTeacher = data.teachers.find(function(teacher) {
+        return teacher.id == id
     })
     if (!foundTeacher) return res.send("Esse professor não foi encontrado!")
     
@@ -97,5 +97,19 @@ exports.put = (req, res) => {
     fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function(err){
         if (err) return res.send("write error!")
         return res.redirect(`/teachers/${id}`)
+    })
+}
+
+exports.delete = (req, res) => {
+    const {id} = req.body
+
+    const filteredTeachers =  data.teachers.find((teacher) => {
+        return teacher.id != id
+    })
+    data.teachers = filteredTeachers
+
+    fs.writeFile("src/data.json", JSON.stringify(data, null, 2), function(err){
+        if (err) return res.send("write error!")
+        return res.redirect('/teachers')
     })
 }
