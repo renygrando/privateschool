@@ -14,6 +14,10 @@
                 <input type="hidden" name="id" value="{{ teacher.id }}">
                 
         </form>
+        <form id="form-delete" action="/teachers?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{ teacher.id }}">
+            <button type="submit">Deletar</button>
+        </form>
     </section>
     
 </div>
