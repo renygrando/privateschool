@@ -39,6 +39,33 @@ module.exports = {
 
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `${year}-${month}-${day}`
+        return {
+            day,
+            month,
+            year,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        }
+    },
+    graduationStudent: function graduationStudent(educationalLevel){
+        const graduation = [
+            "",
+            "5º ano - Ensino Fundamental",
+            "6º ano - Ensino Fundamental",
+            "7º ano - Ensino Fundamental",
+            "8º ano - Ensino Fundamental",
+            "1º ano - Ensino Médio",
+            "2º ano - Ensino Médio",
+            "3º ano - Ensino Médio",
+        ]
+
+        for(i = 0; i <= graduation.length ; i++ ) {
+            
+            if (educationalLevel == i ){
+                return graduation[i]
+            }
+            
+        }
+
     }
 }
