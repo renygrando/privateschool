@@ -3,10 +3,10 @@
 {% block content %}
 
     <div class="card table-container">
-    
-    <div class="create-new-data">
-        <a href="students/create">Cadastrar</a>
-    </div>
+
+        <div class="create-new-data">
+            <a href="students/create">Cadastrar</a>
+        </div>
 
         <table width="100%">
             <thead>
@@ -19,21 +19,23 @@
             </thead>
             <tbody>
                 {% for student in students %}
-                <tr>
-                    <td>
-                        <span style="background-image: url({{ student.avatar_url }})"></span> 
-                        {{ student.name }}
-                    </td>
-                    <td>
-                        <span>{{ student.email }}</span>
-                    </td>
-                    <td>
-                        <span>{{ student.educational_level}}</span>
-                    </td>
-                    <td>
-                        <a href="/students/{{ student.id }}"> Ver </a>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            <span style="background-image: url({{ student.avatar_url }})"></span>
+                            {{ student.name }}
+                        </td>
+                        <td>
+                            <span>{{ student.email }}</span>
+                        </td>
+                        <td>
+                            <span>{{ student.educational_level}}</span>
+                        </td>
+                        <td>
+                            <a href="/students/{{ student.id }}">
+                                Ver
+                            </a>
+                        </td>
+                    </tr>
                 {% endfor %}
             </tbody>
         </table>
