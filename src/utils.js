@@ -1,6 +1,6 @@
 module.exports = {
-    
-    age: function age(timestamp){
+
+    age: function age(timestamp) {
         const today = new Date()
         const birthDate = new Date(timestamp)
 
@@ -8,11 +8,11 @@ module.exports = {
         const month = today.getMonth() - birthDate.getMonth()
 
         if (month < 0 || month == 0 && today.getDate() < birthDate.getDate()) {
-            age = age -1
+            age = age - 1
         }
         return age
     },
-    graduation: function graduation(educationalLevel){
+    graduation: function graduation(educationalLevel) {
         const graduation = [
             " ",
             "Ensino Médio Completo",
@@ -21,16 +21,16 @@ module.exports = {
             "Doutorado",
         ]
 
-        for(i = 0; i <= graduation.length ; i++ ) {
-            
-            if (educationalLevel == i ){
+        for (i = 0; i <= graduation.length; i++) {
+
+            if (educationalLevel == i) {
                 return graduation[i]
             }
-            
+
         }
 
     },
-    date: function(timestamp) {
+    date: function (timestamp) {
         const date = new Date(timestamp)
 
         const year = date.getUTCFullYear()
@@ -47,7 +47,7 @@ module.exports = {
             birthDay: `${day}/${month}`
         }
     },
-    graduationStudent: function graduationStudent(educationalLevel){
+    graduationStudent: function graduationStudent(educationalLevel) {
         const graduation = [
             "",
             "5º ano - Ensino Fundamental",
@@ -59,12 +59,12 @@ module.exports = {
             "3º ano - Ensino Médio",
         ]
 
-        for(i = 0; i <= graduation.length ; i++ ) {
-            
-            if (educationalLevel == i ){
+        for (i = 0; i <= graduation.length; i++) {
+
+            if (educationalLevel == i) {
                 return graduation[i]
             }
-            
+
         }
 
     }
